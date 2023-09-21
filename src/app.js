@@ -14,10 +14,10 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 const AppLayout = () => {
   return (
     <Provider store={appStore}>
-    <div className="app">
-      <Header />
-      <Outlet />
-    </div>
+      <div className="app">
+        <Header />
+        <Outlet />
+      </div>
     </Provider>
   );
 };

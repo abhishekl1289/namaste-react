@@ -77,8 +77,11 @@ const Body = () => {
             key={restaurant.info.id}
             to={"/restaurants/" + restaurant.info.id}
           >
-            {restaurant.info.veg ? <CardVeg resData={restaurant}/> : <Card resData={restaurant} />}
-            
+            {restaurant.info.veg ? (
+              <CardVeg resData={restaurant} />
+            ) : (
+              <Card resData={restaurant} />
+            )}
           </Link>
         ))}
       </div>
